@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <style>
+        :root {
+            --white: #FFFFFF;
+            --black: #000000;
+            --dark: #232830;
+            --very-light-pink: #C7C7C7;
+            --text-input-field: #f7f7f7;
+            --hospital-green: #ACD9B2;
+        
+            --sm: 14px;
+            --md: 16px;
+            --lg: 18px;
+        }
+        body {
+            margin: 0px;
+            font-family: 'Quicksand', sans-serif;
+        }
+        .logo-yard-sale {
+            width: 150px;
+            display: none;
+            margin: auto;
+            margin-bottom: 48px;
+        }
+        .login {
+            width: 100%;
+            height: 100vh;
+
+            display: grid;
+            place-items: center;
+        }
+        .screen-content {
+            width: 300px;
+            display: grid;
+            justify-items: center;
+        }
+        .title {
+            font-size: var(--lg);
+            margin-bottom: 8px;
+            text-align: center;
+        }
+        .subtitle {
+            font: var(--md);
+            color: var(--very-light-pink);
+            margin-top: 0px;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        .email-image-container {
+            background-color: var(--text-input-field);
+            width: 150px;
+            height: 150px;
+            display: grid;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        .email-image-container img {
+            width: 100px;
+        }
+        .primary-button {
+            margin-top: 20px;
+            background-color: var(--hospital-green);
+            border: none;
+            border-radius: 8px;
+            height: 48px;
+            color: var(--white);
+            font-size: var(--md);
+            cursor: pointer;
+            width: 100%;
+        }
+        p {
+            margin-top: 24px;
+            font-size: var(--sm);
+        }
+        p span {
+            color: var(--very-light-pink);
+        }
+        p a {
+            color: var(--hospital-green);
+            text-decoration: none;
+        }
+        @media (max-width: 640px) {
+            .logo-yard-sale {
+                display: block;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="login">
+        <div class="screen-content">
+            <img src="./curso-frontend-developer-practico/logos/logo_yard_sale.svg" alt="logo-yard-sale" class="logo-yard-sale">
+            
+            <h1 class="title">Email has been sent!</h1>
+            
+            <p class="subtitle">Please check your inbox for instructions on how to reset the password</p>
+
+            <div class="email-image-container">
+                <img src="./curso-frontend-developer-practico/icons/email.svg" alt="email icon">
+            </div>
+
+            <input type="button" value="Login" class="primary-button">
+
+            <p class="resend">
+                <span>Didn't receive the email?</span>
+                <a href="/">Resend</a>
+            </p>
+        </div>
+    </div>
+</body>
+</html>
